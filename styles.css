@@ -1,16 +1,18 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
     background-color: #121212;
-    line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
-    background: #1f1f1f;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -19,30 +21,22 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    background: linear-gradient(to right, #1a1a1a, #333);
-    color: #fff;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(to right, #1e3a8a, #6ee7b7);
 }
 
-/* Content Alignment */
-.container {
-    width: 80%;
-    margin: auto;
+.hero-title .highlight {
+    color: #6ee7b7;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
 }
 
-/* Spacing for Sections */
-.about,
-.services,
-.features {
-    padding: 4rem 0;
-}
-
-.features-grid,
-.services-grid {
+.services-grid,
+.features-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
