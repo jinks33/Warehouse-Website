@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Logistics Pro</title>
+    <title>Solar Logistics</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- AOS -->
+    <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -19,8 +19,9 @@
         <div class="container">
             <a href="#home" class="logo"><i class="fas fa-solar-panel"></i> Solar<span>Logistics</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#features">Key Features</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -28,21 +29,36 @@
 
     <!-- Hero Section -->
     <header id="home" class="hero">
+        <canvas id="heroCanvas"></canvas>
         <div class="hero-content">
-            <h1 data-aos="zoom-in">Revolutionizing <span class="highlight">Sustainable</span> Logistics</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Eco-friendly warehousing and logistics for a greener tomorrow.</p>
-            <a href="#services" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
+            <h1 data-aos="zoom-in">Welcome to <span class="highlight">Solar Logistics</span></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Revolutionizing logistics with sustainable solutions and cutting-edge technology.</p>
+            <a href="#services" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Learn More</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 data-aos="slide-right"><i class="fas fa-warehouse"></i> About Us</h2>
+            <h2 data-aos="slide-right"><i class="fas fa-info-circle"></i> About Us</h2>
             <p data-aos="slide-left" data-aos-delay="200">
-                At Solar Logistics, we merge sustainable solutions with cutting-edge technology. Powered by renewable energy, 
-                our warehouse offers over 5200 sq. meters of ventilated storage space and optimized docking stations.
+                At Solar Logistics, we redefine warehousing and logistics with sustainability and innovation at the core. 
+                Our solar-powered operations minimize environmental impact, while our state-of-the-art facilities ensure efficiency.
             </p>
+            <div class="about-details">
+                <div class="detail" data-aos="fade-up">
+                    <h3>5200 sq. meters</h3>
+                    <p>Spacious, ventilated storage space to accommodate diverse logistics needs.</p>
+                </div>
+                <div class="detail" data-aos="fade-up" data-aos-delay="200">
+                    <h3>8 Optimized Docks</h3>
+                    <p>Designed for seamless loading, unloading, and transport integration.</p>
+                </div>
+                <div class="detail" data-aos="fade-up" data-aos-delay="400">
+                    <h3>100% Solar Powered</h3>
+                    <p>Harnessing renewable energy to create an eco-friendly logistics ecosystem.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -51,20 +67,44 @@
         <div class="container">
             <h2 data-aos="fade-up"><i class="fas fa-tools"></i> Our Services</h2>
             <div class="services-grid">
-                <div class="service-card" data-aos="slide-up">
+                <div class="service-card" data-aos="flip-left">
                     <i class="fas fa-box fa-3x highlight"></i>
-                    <h3>Storage Facilities</h3>
-                    <p>Efficient godowns with partitioned sections for all storage needs.</p>
+                    <h3>Comprehensive Storage</h3>
+                    <p>Partitioned godowns with optimal conditions for diverse inventory.</p>
                 </div>
-                <div class="service-card" data-aos="slide-up" data-aos-delay="200">
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
                     <i class="fas fa-truck fa-3x highlight"></i>
                     <h3>Transportation</h3>
-                    <p>Seamless transport solutions for uninterrupted supply chain management.</p>
+                    <p>Reliable transport solutions to keep your supply chain seamless.</p>
                 </div>
-                <div class="service-card" data-aos="slide-up" data-aos-delay="400">
-                    <i class="fas fa-recycle fa-3x highlight"></i>
+                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                    <i class="fas fa-solar-panel fa-3x highlight"></i>
                     <h3>Sustainable Energy</h3>
-                    <p>Solar-powered operations to minimize environmental impact.</p>
+                    <p>Solar-powered operations for an environmentally conscious logistics process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 data-aos="fade-up"><i class="fas fa-star"></i> Key Features</h2>
+            <div class="features-grid">
+                <div class="feature" data-aos="slide-up">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Sustainability</h3>
+                    <p>Solar-powered logistics reducing carbon footprint significantly.</p>
+                </div>
+                <div class="feature" data-aos="slide-up" data-aos-delay="200">
+                    <i class="fas fa-boxes"></i>
+                    <h3>Scalable Storage</h3>
+                    <p>Modular and expandable storage solutions for all business types.</p>
+                </div>
+                <div class="feature" data-aos="slide-up" data-aos-delay="400">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Connectivity</h3>
+                    <p>Integrated docking and transport systems for seamless supply chains.</p>
                 </div>
             </div>
         </div>
@@ -74,7 +114,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 data-aos="fade-up"><i class="fas fa-envelope"></i> Contact Us</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We'd love to hear from you! Let’s collaborate on your next logistics project.</p>
+            <p data-aos="fade-up" data-aos-delay="200">Let’s discuss how we can collaborate for a greener, smarter logistics solution.</p>
             <form data-aos="fade-up" data-aos-delay="400">
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Your Name</label>
@@ -102,14 +142,29 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         AOS.init({ duration: 1500 });
 
-        // GSAP Animations
-        gsap.from(".hero h1", { opacity: 0, y: -50, duration: 1 });
-        gsap.from(".hero p", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
-        gsap.from(".hero .btn", { opacity: 0, scale: 0.8, duration: 1, delay: 1 });
+        // Hero 3D Background
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('heroCanvas'), alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.position.z = 5;
+
+        const geometry = new THREE.TorusGeometry(1, 0.2, 16, 100);
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff99, wireframe: true });
+        const torus = new THREE.Mesh(geometry, material);
+
+        scene.add(torus);
+        function animate() {
+            requestAnimationFrame(animate);
+            torus.rotation.x += 0.01;
+            torus.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+        animate();
     </script>
 </body>
 </html>
