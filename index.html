@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar-Powered Warehouse</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Font Awesome -->
@@ -17,59 +17,54 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Solar<span>Warehouse</span></h1>
+            <a class="logo" href="#home"><i class="fas fa-solar-panel"></i> Solar<span>Warehouse</span></a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header id="home" class="hero">
-        <div class="hero-content" data-aos="zoom-in">
-            <h1><span class="gradient-text">Sustainable</span> Logistics Excellence</h1>
-            <p>Powering the future of warehousing with renewable energy and modern efficiency.</p>
-            <a href="#services" class="btn btn-primary">Explore Services</a>
+        <div class="hero-content">
+            <h1 data-aos="fade-up"><span class="gradient-text">Solar-Powered</span> Logistics</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Your eco-friendly solution for seamless warehousing and logistics.</p>
+            <a href="#services" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="400">Explore Services</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 data-aos="fade-right">About Our Warehouse</h2>
-            <p data-aos="fade-left">
-                Located at the heart of [Your Location], our warehouse is powered by renewable solar energy. 
-                With a commitment to sustainability and innovation, we offer 5200 sq. meters of fully ventilated 
-                storage space, optimized for logistics excellence.
+            <h2 data-aos="fade-right"><i class="fas fa-warehouse"></i> About Us</h2>
+            <p data-aos="fade-left" data-aos-delay="200">
+                Our warehouse combines state-of-the-art logistics with a commitment to sustainability. With over 5200 sq. meters 
+                of storage space, 8 optimized docks, and solar-powered operations, we redefine efficiency and eco-conscious logistics.
             </p>
-            <div class="about-grid">
-                <img src="https://via.placeholder.com/600" alt="Warehouse" data-aos="zoom-in">
-            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 data-aos="fade-up">Our Services</h2>
+            <h2 data-aos="fade-up"><i class="fas fa-tools"></i> Our Services</h2>
             <div class="services-grid">
-                <div class="service-card" data-aos="flip-left">
-                    <i class="fas fa-warehouse fa-3x gradient-icon"></i>
+                <div class="service-card" data-aos="zoom-in">
+                    <i class="fas fa-box fa-3x gradient-icon"></i>
                     <h3>Storage Facilities</h3>
-                    <p>Two godowns with partitioned sections and 8 optimized docks.</p>
+                    <p>Partitioned godowns with spacious storage solutions.</p>
                 </div>
-                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
-                    <i class="fas fa-truck-loading fa-3x gradient-icon"></i>
-                    <h3>Loading & Unloading</h3>
-                    <p>Professional loading docks with seamless logistics support.</p>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-truck fa-3x gradient-icon"></i>
+                    <h3>Transportation</h3>
+                    <p>Reliable transport solutions to keep your supply chain moving.</p>
                 </div>
-                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
-                    <i class="fas fa-solar-panel fa-3x gradient-icon"></i>
-                    <h3>Solar-Powered Operations</h3>
-                    <p>Harnessing renewable energy to power our eco-friendly warehouse.</p>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-recycle fa-3x gradient-icon"></i>
+                    <h3>Sustainable Energy</h3>
+                    <p>Solar-powered operations for a greener tomorrow.</p>
                 </div>
             </div>
         </div>
@@ -78,17 +73,20 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 data-aos="fade-up">Contact Us</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Reach out for all your logistics and warehousing needs.</p>
+            <h2 data-aos="fade-up"><i class="fas fa-envelope"></i> Contact Us</h2>
+            <p data-aos="fade-up" data-aos-delay="200">We’d love to hear from you! Fill out the form below or reach us at <b>contact@solarwarehouse.com</b>.</p>
             <form data-aos="fade-up" data-aos-delay="400">
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
+                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -97,7 +95,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>© 2024 Solar Warehouse. All Rights Reserved.</p>
+        <div class="container">
+            <p>© 2024 Solar Warehouse. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <!-- Scripts -->
