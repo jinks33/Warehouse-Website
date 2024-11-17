@@ -1,25 +1,26 @@
 /* General */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
-
 /* Navbar */
 .navbar {
     background: #000;
-    color: #fff;
+    color: white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00c853;
 }
 
 .nav-links {
@@ -30,50 +31,29 @@ h1, h2, h3 {
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #feb47b;
+    color: white;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(to right, #0f4c75, #3282b8);
+    background: linear-gradient(to right, #1b5e20, #4caf50);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: white;
 }
 
 .hero h1 .gradient-text {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #00c853, #8bc34a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Services */
-.services {
-    padding: 5rem 0;
-    background: #f9f9f9;
-}
-
-.service-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-}
-
 /* Contact */
 .contact {
+    background: linear-gradient(to bottom, #4caf50, #1b5e20);
+    color: white;
     padding: 4rem 0;
-    background: linear-gradient(to bottom, #3282b8, #0f4c75);
-    color: #fff;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: auto;
 }
