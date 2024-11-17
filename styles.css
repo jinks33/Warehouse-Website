@@ -1,0 +1,39 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #1c1c1c, #0f4c75), url('https://via.placeholder.com/1920x900') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Services Section */
+.services {
+    background: linear-gradient(to right, #0f4c75, #3282b8);
+    color: white;
+}
+
+.services h4 {
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(to right, #0f4c75, #1c1c1c);
+}
