@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar-Powered Warehouse</title>
+    <title>Solar Logistics Pro</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- AOS Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Hover.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,11 +17,11 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo hvr-float"><i class="fas fa-solar-panel"></i> Solar<span>Warehouse</span></a>
+            <a href="#home" class="logo"><i class="fas fa-solar-panel"></i> Solar<span>Logistics</span></a>
             <ul class="nav-links">
-                <li><a href="#about" class="hvr-underline-from-left">About</a></li>
-                <li><a href="#services" class="hvr-underline-from-left">Services</a></li>
-                <li><a href="#contact" class="hvr-underline-from-left">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -31,20 +29,19 @@
     <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1 data-aos="fade-up">Welcome to <span class="gradient-text">Solar Logistics</span></h1>
-            <p data-aos="fade-up" data-aos-delay="200">Eco-friendly solutions for seamless warehousing and logistics.</p>
-            <a href="#services" class="btn btn-primary hvr-bounce-to-right" data-aos="zoom-in" data-aos-delay="400">Explore Services</a>
+            <h1 data-aos="zoom-in">Revolutionizing <span class="highlight">Sustainable</span> Logistics</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Eco-friendly warehousing and logistics for a greener tomorrow.</p>
+            <a href="#services" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Explore Services</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 data-aos="fade-right"><i class="fas fa-warehouse"></i> About Us</h2>
-            <p data-aos="fade-left" data-aos-delay="200">
-                At Solar Logistics, we combine sustainable practices with cutting-edge technology to provide unparalleled 
-                warehousing and logistics solutions. With over 5200 sq. meters of ventilated storage space and renewable energy, 
-                we are shaping the future of logistics.
+            <h2 data-aos="slide-right"><i class="fas fa-warehouse"></i> About Us</h2>
+            <p data-aos="slide-left" data-aos-delay="200">
+                At Solar Logistics, we merge sustainable solutions with cutting-edge technology. Powered by renewable energy, 
+                our warehouse offers over 5200 sq. meters of ventilated storage space and optimized docking stations.
             </p>
         </div>
     </section>
@@ -54,20 +51,20 @@
         <div class="container">
             <h2 data-aos="fade-up"><i class="fas fa-tools"></i> Our Services</h2>
             <div class="services-grid">
-                <div class="service-card" data-aos="zoom-in">
-                    <i class="fas fa-box fa-3x gradient-icon"></i>
+                <div class="service-card" data-aos="slide-up">
+                    <i class="fas fa-box fa-3x highlight"></i>
                     <h3>Storage Facilities</h3>
-                    <p>Partitioned godowns with ample space for all your needs.</p>
+                    <p>Efficient godowns with partitioned sections for all storage needs.</p>
                 </div>
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-truck fa-3x gradient-icon"></i>
+                <div class="service-card" data-aos="slide-up" data-aos-delay="200">
+                    <i class="fas fa-truck fa-3x highlight"></i>
                     <h3>Transportation</h3>
-                    <p>Reliable transport solutions to streamline your operations.</p>
+                    <p>Seamless transport solutions for uninterrupted supply chain management.</p>
                 </div>
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
-                    <i class="fas fa-recycle fa-3x gradient-icon"></i>
-                    <h3>Renewable Energy</h3>
-                    <p>Solar-powered operations for a sustainable future.</p>
+                <div class="service-card" data-aos="slide-up" data-aos-delay="400">
+                    <i class="fas fa-recycle fa-3x highlight"></i>
+                    <h3>Sustainable Energy</h3>
+                    <p>Solar-powered operations to minimize environmental impact.</p>
                 </div>
             </div>
         </div>
@@ -77,21 +74,21 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 data-aos="fade-up"><i class="fas fa-envelope"></i> Contact Us</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Let’s collaborate! Send us a message or reach out at <b>contact@solarwarehouse.com</b>.</p>
+            <p data-aos="fade-up" data-aos-delay="200">We'd love to hear from you! Let’s collaborate on your next logistics project.</p>
             <form data-aos="fade-up" data-aos-delay="400">
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
                     <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
                     <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary hvr-grow">Send Message</button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
     </section>
@@ -99,7 +96,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 Solar Warehouse. All Rights Reserved.</p>
+            <p>© 2024 Solar Logistics. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -107,7 +104,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-        AOS.init({ duration: 1200 });
+        AOS.init({ duration: 1500 });
+
+        // GSAP Animations
+        gsap.from(".hero h1", { opacity: 0, y: -50, duration: 1 });
+        gsap.from(".hero p", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
+        gsap.from(".hero .btn", { opacity: 0, scale: 0.8, duration: 1, delay: 1 });
     </script>
 </body>
 </html>
