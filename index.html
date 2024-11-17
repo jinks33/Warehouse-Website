@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar-Powered Warehouse</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- AOS Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Hover.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
@@ -17,11 +19,11 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a class="logo" href="#home"><i class="fas fa-solar-panel"></i> Solar<span>Warehouse</span></a>
+            <a href="#home" class="logo hvr-float"><i class="fas fa-solar-panel"></i> Solar<span>Warehouse</span></a>
             <ul class="nav-links">
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#about" class="hvr-underline-from-left">About</a></li>
+                <li><a href="#services" class="hvr-underline-from-left">Services</a></li>
+                <li><a href="#contact" class="hvr-underline-from-left">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -29,9 +31,9 @@
     <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1 data-aos="fade-up"><span class="gradient-text">Solar-Powered</span> Logistics</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Your eco-friendly solution for seamless warehousing and logistics.</p>
-            <a href="#services" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="400">Explore Services</a>
+            <h1 data-aos="fade-up">Welcome to <span class="gradient-text">Solar Logistics</span></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Eco-friendly solutions for seamless warehousing and logistics.</p>
+            <a href="#services" class="btn btn-primary hvr-bounce-to-right" data-aos="zoom-in" data-aos-delay="400">Explore Services</a>
         </div>
     </header>
 
@@ -40,8 +42,9 @@
         <div class="container">
             <h2 data-aos="fade-right"><i class="fas fa-warehouse"></i> About Us</h2>
             <p data-aos="fade-left" data-aos-delay="200">
-                Our warehouse combines state-of-the-art logistics with a commitment to sustainability. With over 5200 sq. meters 
-                of storage space, 8 optimized docks, and solar-powered operations, we redefine efficiency and eco-conscious logistics.
+                At Solar Logistics, we combine sustainable practices with cutting-edge technology to provide unparalleled 
+                warehousing and logistics solutions. With over 5200 sq. meters of ventilated storage space and renewable energy, 
+                we are shaping the future of logistics.
             </p>
         </div>
     </section>
@@ -54,17 +57,17 @@
                 <div class="service-card" data-aos="zoom-in">
                     <i class="fas fa-box fa-3x gradient-icon"></i>
                     <h3>Storage Facilities</h3>
-                    <p>Partitioned godowns with spacious storage solutions.</p>
+                    <p>Partitioned godowns with ample space for all your needs.</p>
                 </div>
                 <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
                     <i class="fas fa-truck fa-3x gradient-icon"></i>
                     <h3>Transportation</h3>
-                    <p>Reliable transport solutions to keep your supply chain moving.</p>
+                    <p>Reliable transport solutions to streamline your operations.</p>
                 </div>
                 <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
                     <i class="fas fa-recycle fa-3x gradient-icon"></i>
-                    <h3>Sustainable Energy</h3>
-                    <p>Solar-powered operations for a greener tomorrow.</p>
+                    <h3>Renewable Energy</h3>
+                    <p>Solar-powered operations for a sustainable future.</p>
                 </div>
             </div>
         </div>
@@ -74,7 +77,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 data-aos="fade-up"><i class="fas fa-envelope"></i> Contact Us</h2>
-            <p data-aos="fade-up" data-aos-delay="200">We’d love to hear from you! Fill out the form below or reach us at <b>contact@solarwarehouse.com</b>.</p>
+            <p data-aos="fade-up" data-aos-delay="200">Let’s collaborate! Send us a message or reach out at <b>contact@solarwarehouse.com</b>.</p>
             <form data-aos="fade-up" data-aos-delay="400">
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Your Name</label>
@@ -88,7 +91,7 @@
                     <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
                     <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary hvr-grow">Send Message</button>
             </form>
         </div>
     </section>
