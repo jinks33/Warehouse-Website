@@ -29,35 +29,34 @@
 
     <!-- Hero Section -->
     <header id="home" class="hero">
-        <canvas id="heroCanvas"></canvas>
         <div class="hero-content">
-            <h1 data-aos="zoom-in">Welcome to <span class="highlight">Solar Logistics</span></h1>
-            <p data-aos="fade-up" data-aos-delay="200">Revolutionizing logistics with sustainable solutions and cutting-edge technology.</p>
-            <a href="#services" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Learn More</a>
+            <h1 class="title"><span class="highlight">Solar Logistics</span></h1>
+            <p class="subtitle">Sustainable logistics solutions for a better tomorrow.</p>
+            <a href="#services" class="btn btn-primary">Explore Services</a>
         </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 data-aos="slide-right"><i class="fas fa-info-circle"></i> About Us</h2>
+            <h2 class="section-title">About Us</h2>
             <div class="about-grid">
-                <p data-aos="slide-left" data-aos-delay="200">
-                    At Solar Logistics, we redefine warehousing and logistics with sustainability and innovation at the core. 
-                    Our solar-powered operations minimize environmental impact, while our state-of-the-art facilities ensure efficiency.
+                <p>
+                    At Solar Logistics, we combine cutting-edge technology with sustainability to redefine warehousing and logistics. 
+                    With over 5200 sq. meters of ventilated storage space and renewable energy, we are shaping the future of logistics.
                 </p>
                 <div class="about-details">
-                    <div class="detail" data-aos="fade-up">
+                    <div class="detail">
                         <h3>5200 sq. meters</h3>
-                        <p>Spacious, ventilated storage space to accommodate diverse logistics needs.</p>
+                        <p>Spacious, ventilated storage space to meet diverse logistics needs.</p>
                     </div>
-                    <div class="detail" data-aos="fade-up" data-aos-delay="200">
+                    <div class="detail">
                         <h3>8 Optimized Docks</h3>
-                        <p>Designed for seamless loading, unloading, and transport integration.</p>
+                        <p>Seamlessly designed for loading, unloading, and transport integration.</p>
                     </div>
-                    <div class="detail" data-aos="fade-up" data-aos-delay="400">
+                    <div class="detail">
                         <h3>100% Solar Powered</h3>
-                        <p>Harnessing renewable energy to create an eco-friendly logistics ecosystem.</p>
+                        <p>Renewable energy operations for an eco-friendly logistics experience.</p>
                     </div>
                 </div>
             </div>
@@ -67,19 +66,19 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 data-aos="fade-up"><i class="fas fa-tools"></i> Our Services</h2>
+            <h2 class="section-title">Our Services</h2>
             <div class="services-grid">
-                <div class="service-card" data-aos="flip-left">
+                <div class="service-card">
                     <i class="fas fa-box fa-3x highlight"></i>
                     <h3>Comprehensive Storage</h3>
                     <p>Partitioned godowns with optimal conditions for diverse inventory.</p>
                 </div>
-                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="service-card">
                     <i class="fas fa-truck fa-3x highlight"></i>
                     <h3>Transportation</h3>
                     <p>Reliable transport solutions to keep your supply chain seamless.</p>
                 </div>
-                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="service-card">
                     <i class="fas fa-solar-panel fa-3x highlight"></i>
                     <h3>Sustainable Energy</h3>
                     <p>Solar-powered operations for an environmentally conscious logistics process.</p>
@@ -89,21 +88,21 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features bg-dark">
+    <section id="features" class="features">
         <div class="container">
-            <h2 data-aos="fade-up"><i class="fas fa-star"></i> Key Features</h2>
+            <h2 class="section-title">Key Features</h2>
             <div class="features-grid">
-                <div class="feature" data-aos="slide-up">
+                <div class="feature">
                     <i class="fas fa-leaf"></i>
                     <h3>Sustainability</h3>
                     <p>Solar-powered logistics reducing carbon footprint significantly.</p>
                 </div>
-                <div class="feature" data-aos="slide-up" data-aos-delay="200">
+                <div class="feature">
                     <i class="fas fa-boxes"></i>
                     <h3>Scalable Storage</h3>
                     <p>Modular and expandable storage solutions for all business types.</p>
                 </div>
-                <div class="feature" data-aos="slide-up" data-aos-delay="400">
+                <div class="feature">
                     <i class="fas fa-network-wired"></i>
                     <h3>Connectivity</h3>
                     <p>Integrated docking and transport systems for seamless supply chains.</p>
@@ -115,9 +114,9 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 data-aos="fade-up"><i class="fas fa-envelope"></i> Contact Us</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Let’s discuss how we can collaborate for a greener, smarter logistics solution.</p>
-            <form data-aos="fade-up" data-aos-delay="400">
+            <h2 class="section-title">Contact Us</h2>
+            <p>Let’s discuss how we can collaborate for a smarter logistics solution.</p>
+            <form>
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -143,9 +142,15 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-        AOS.init({ duration: 1500 });
+        gsap.from(".hero-content", { duration: 1.5, y: -50, opacity: 0 });
+        gsap.from(".about-grid p", { duration: 1.2, x: -50, opacity: 0, delay: 0.5 });
+        gsap.from(".services-grid .service-card", {
+            stagger: 0.3,
+            scale: 0.9,
+            opacity: 0,
+        });
     </script>
 </body>
 </html>
