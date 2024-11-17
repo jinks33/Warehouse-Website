@@ -1,61 +1,38 @@
-/* General */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #eee;
+    color: #fff;
     background-color: #121212;
+    line-height: 1.6;
 }
 
 /* Navbar */
 .navbar {
     background: #1f1f1f;
+    color: white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #00ff99;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #00ff99;
-}
-
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    background: linear-gradient(to right, #0f0f0f, #1c1c1c);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.hero .highlight {
-    color: #00ff99;
-}
-
-/* Contact Section */
-.contact {
-    padding: 4rem 0;
-    background: #1f1f1f;
-    color: #fff;
+/* Alignments, Distribution */
+.about-grid,
+.services-grid,
+.features-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
