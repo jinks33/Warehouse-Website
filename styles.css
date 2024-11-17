@@ -1,43 +1,30 @@
-/* General Styles */
+/* General Styling */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
     background-color: #121212;
 }
 
-/* Navbar */
-.navbar {
-    background: #1a1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
 /* Hero Section */
 .hero {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 100vh;
     padding: 2rem;
     background: linear-gradient(to right, #1e3a8a, #6ee7b7);
 }
-
-.hero-title .highlight {
-    color: #6ee7b7;
+.hero-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+.hero-title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
 }
-
-.services-grid,
-.features-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.hero-graphic canvas {
+    width: 100%;
+    height: auto;
 }
