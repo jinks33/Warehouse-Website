@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar sticky">
         <div class="container">
             <a href="#home" class="logo"><i class="fas fa-solar-panel"></i> Solar<span>Logistics</span></a>
             <ul class="nav-links">
@@ -41,22 +41,24 @@
     <section id="about" class="about">
         <div class="container">
             <h2 data-aos="slide-right"><i class="fas fa-info-circle"></i> About Us</h2>
-            <p data-aos="slide-left" data-aos-delay="200">
-                At Solar Logistics, we redefine warehousing and logistics with sustainability and innovation at the core. 
-                Our solar-powered operations minimize environmental impact, while our state-of-the-art facilities ensure efficiency.
-            </p>
-            <div class="about-details">
-                <div class="detail" data-aos="fade-up">
-                    <h3>5200 sq. meters</h3>
-                    <p>Spacious, ventilated storage space to accommodate diverse logistics needs.</p>
-                </div>
-                <div class="detail" data-aos="fade-up" data-aos-delay="200">
-                    <h3>8 Optimized Docks</h3>
-                    <p>Designed for seamless loading, unloading, and transport integration.</p>
-                </div>
-                <div class="detail" data-aos="fade-up" data-aos-delay="400">
-                    <h3>100% Solar Powered</h3>
-                    <p>Harnessing renewable energy to create an eco-friendly logistics ecosystem.</p>
+            <div class="about-grid">
+                <p data-aos="slide-left" data-aos-delay="200">
+                    At Solar Logistics, we redefine warehousing and logistics with sustainability and innovation at the core. 
+                    Our solar-powered operations minimize environmental impact, while our state-of-the-art facilities ensure efficiency.
+                </p>
+                <div class="about-details">
+                    <div class="detail" data-aos="fade-up">
+                        <h3>5200 sq. meters</h3>
+                        <p>Spacious, ventilated storage space to accommodate diverse logistics needs.</p>
+                    </div>
+                    <div class="detail" data-aos="fade-up" data-aos-delay="200">
+                        <h3>8 Optimized Docks</h3>
+                        <p>Designed for seamless loading, unloading, and transport integration.</p>
+                    </div>
+                    <div class="detail" data-aos="fade-up" data-aos-delay="400">
+                        <h3>100% Solar Powered</h3>
+                        <p>Harnessing renewable energy to create an eco-friendly logistics ecosystem.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,7 +89,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section id="features" class="features bg-dark">
         <div class="container">
             <h2 data-aos="fade-up"><i class="fas fa-star"></i> Key Features</h2>
             <div class="features-grid">
@@ -142,29 +144,8 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         AOS.init({ duration: 1500 });
-
-        // Hero 3D Background
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('heroCanvas'), alpha: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.position.z = 5;
-
-        const geometry = new THREE.TorusGeometry(1, 0.2, 16, 100);
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff99, wireframe: true });
-        const torus = new THREE.Mesh(geometry, material);
-
-        scene.add(torus);
-        function animate() {
-            requestAnimationFrame(animate);
-            torus.rotation.x += 0.01;
-            torus.rotation.y += 0.01;
-            renderer.render(scene, camera);
-        }
-        animate();
     </script>
 </body>
 </html>
