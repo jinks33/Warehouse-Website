@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -10,13 +10,27 @@ body {
 /* Navbar */
 .navbar {
     background: #1a1a1a;
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #6ee7b7;
 }
 
 /* Hero Section */
@@ -26,15 +40,11 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to right, #1e3a8a, #6ee7b7);
-}
-.hero-content {
-    flex: 1;
-    padding-right: 2rem;
+    padding: 2rem;
 }
 .hero-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
 }
 .hero-subtitle {
     margin: 1rem 0;
